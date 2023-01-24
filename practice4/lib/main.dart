@@ -43,11 +43,36 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
 
+    var arrColors = [Colors.red,
+        Colors.orangeAccent,
+        Colors.grey,
+        Colors.yellow,
+        Colors.green,
+        Colors.pink,
+        Colors.orange,
+        Colors.black
+    ];
+
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Text("hello world")
+      body: GridView.count(crossAxisCount: 5,
+      crossAxisSpacing: 11,
+      mainAxisSpacing: 11,
+      children: [
+        Container(color: arrColors[0],),
+        Container(color: arrColors[1],),
+        Container(color: arrColors[2],),
+        Container(color: arrColors[3],),
+        Container(color: arrColors[4],),
+        Container(color: arrColors[5],),
+        Container(color: arrColors[6],),
+        Container(color: arrColors[0],),
+        Container(color: arrColors[2],),
+        Container(color: arrColors[3],),
+
+      ],)
     );
   }
 }
