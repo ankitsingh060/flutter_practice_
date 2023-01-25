@@ -33,6 +33,9 @@ class MyHomePage extends StatelessWidget {
         title: Text("Wrap widget"),
       ),
       body: Wrap(
+        direction: Axis.horizontal,
+        alignment: WrapAlignment.center,
+        spacing: 11,
         children: [
           Container(
             width: 100,
