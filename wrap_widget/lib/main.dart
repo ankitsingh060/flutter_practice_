@@ -32,73 +32,102 @@ class MyHomePage extends StatelessWidget {
 
         title: Text("Wrap widget"),
       ),
-      body: Wrap(
-        direction: Axis.horizontal,
-        alignment: WrapAlignment.center,
-        spacing: 11,
+      // body: Wrap(
+      //   direction: Axis.horizontal,
+      //   alignment: WrapAlignment.center,
+      //   spacing: 11,
+      //   children: [
+      //     Container(
+      //       width: 100,
+      //       height: 100,
+      //       color:Colors.deepOrange,
+      //     ),
+      //     Container(
+      //         width: 100,
+      //         height: 100,
+      //         color:Colors.blue,
+      //     ),
+      //     Container(
+      //         width: 100,
+      //         height: 100,
+      //         color:Colors.deepOrange,
+      //     ),
+      //     Container(
+      //         width: 50,
+      //         height: 100,
+      //         color:Colors.black,
+      //     ),
+      //     Container(
+      //         width: 100,
+      //         height: 100,
+      //         color:Colors.deepOrange,
+      //     ),
+      //     Container(
+      //         width: 100,
+      //         height: 100,
+      //         color:Colors.lightGreenAccent,
+      //     ),
+      //     Container(
+      //       width: 100,
+      //       height: 100,
+      //       color:Colors.deepOrange,
+      //     ),
+      //     Container(
+      //       width: 100,
+      //       height: 100,
+      //       color:Colors.blue,
+      //     ),
+      //     Container(
+      //       width: 100,
+      //       height: 100,
+      //       color:Colors.deepOrange,
+      //     ),
+      //     Container(
+      //       width: 100,
+      //       height: 100,
+      //       color:Colors.black,
+      //     ),
+      //     Container(
+      //       width: 100,
+      //       height: 100,
+      //       color:Colors.deepOrange,
+      //     ),
+      //     Container(
+      //       width: 100,
+      //       height: 100,
+      //       color:Colors.lightGreenAccent,
+      //     ),
+      //   ],
+      // )
+
+      // Size Box Widget
+      body: Row(
         children: [
-          Container(
-            width: 100,
-            height: 100,
-            color:Colors.deepOrange,
+          SizedBox.square(
+            dimension: 100,
+
+            child: ElevatedButton(
+              onPressed: (){
+
+              },
+              child: Text("Clicked me!!"),
+            ),
           ),
-          Container(
-              width: 100,
-              height: 100,
-              color:Colors.blue,
+          SizedBox(
+            width: 20,
           ),
-          Container(
-              width: 100,
-              height: 100,
-              color:Colors.deepOrange,
-          ),
-          Container(
-              width: 50,
-              height: 100,
-              color:Colors.black,
-          ),
-          Container(
-              width: 100,
-              height: 100,
-              color:Colors.deepOrange,
-          ),
-          Container(
-              width: 100,
-              height: 100,
-              color:Colors.lightGreenAccent,
-          ),
-          Container(
-            width: 100,
-            height: 100,
-            color:Colors.deepOrange,
-          ),
-          Container(
-            width: 100,
-            height: 100,
-            color:Colors.blue,
-          ),
-          Container(
-            width: 100,
-            height: 100,
-            color:Colors.deepOrange,
-          ),
-          Container(
-            width: 100,
-            height: 100,
-            color:Colors.black,
-          ),
-          Container(
-            width: 100,
-            height: 100,
-            color:Colors.deepOrange,
-          ),
-          Container(
-            width: 100,
-            height: 100,
-            color:Colors.lightGreenAccent,
+          SizedBox.square(
+            dimension: 100,
+
+            child: ElevatedButton(
+              onPressed: (){
+
+              },
+              child: Text("Clicked me!!"),
+            ),
           ),
         ],
-      )
+      ),
     );
   }
 }
