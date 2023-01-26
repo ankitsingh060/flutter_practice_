@@ -100,33 +100,49 @@ class MyHomePage extends StatelessWidget {
       //   ],
       // )
 
-      // Size Box Widget
-      body: Row(
-        children: [
-          SizedBox.square(
-            dimension: 100,
+      // // Size Box Widget
+      // body: Row(
+      //   children: [
+      //     SizedBox.square(
+      //       dimension: 100,
+      //
+      //       child: ElevatedButton(
+      //         onPressed: (){
+      //
+      //         },
+      //         child: Text("Clicked me!!"),
+      //       ),
+      //     ),
+      //     SizedBox(
+      //       width: 20,
+      //     ),
+      //     SizedBox.square(
+      //       dimension: 100,
+      //
+      //       child: ElevatedButton(
+      //         onPressed: (){
+      //
+      //         },
+      //         child: Text("Clicked me!!"),
+      //       ),
+      //     ),
+      //   ],
+      // ),
 
-            child: ElevatedButton(
-              onPressed: (){
-
-              },
-              child: Text("Clicked me!!"),
-            ),
+      //Rich Text
+      body: RichText(
+        text: TextSpan(
+          style: TextStyle(
+            color: Colors.greenAccent,
+            fontSize: 25
           ),
-          SizedBox(
-            width: 20,
-          ),
-          SizedBox.square(
-            dimension: 100,
-
-            child: ElevatedButton(
-              onPressed: (){
-
-              },
-              child: Text("Clicked me!!"),
-            ),
-          ),
-        ],
+          children: [
+            TextSpan(text: "Hello"),
+            TextSpan(text: "World!" ,style:
+            TextStyle(color: Colors.red,
+            fontSize: 40))
+          ]
+        ),
       ),
     );
   }
