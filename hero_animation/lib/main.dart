@@ -32,21 +32,23 @@ class MyHomePage extends StatelessWidget {
 
         title: Text("Hero Animation"),
       ),
-      body:Container(
-        child: Center(
-          child: InkWell(
-            onTap: (){
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => DetailPage(),));
-            },
-            child: Hero(
-                tag: 'backgroound',
-                child: Image.asset('assests/Image/welcome.png', width: 150,
-                height: 100,)
-            ),
-          ),
-        ),
-      )
+      // body:Container(
+      //   child: Center(
+      //     child: InkWell(
+      //       onTap: (){
+      //         Navigator.push(context,
+      //             MaterialPageRoute(builder: (context) => DetailPage(),));
+      //       },
+      //       child: Hero(
+      //           tag: 'backgroound',
+      //           child: Image.asset('assests/Image/welcome.png', width: 150,
+      //           height: 100,)
+      //       ),
+      //     ),
+      //   ),
+      // )
+
+      body: ,
 
     );
   }
